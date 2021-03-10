@@ -1,0 +1,44 @@
+@import url();
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(244, 244, 244);
+    font-size: 16px;
+}
+
+body, html {
+  height: 100%;
+}
+
+.background {
+    background-image: url("/img/TTT06895_small.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo img {
+    width:239px;
+    height: 80px;
+}
+
+a {
+    text-decoration: none;
+    color:  rgb(244, 244, 244);
+}
+h1 {
+    font-size: 150px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+
