@@ -16,7 +16,7 @@
 }
 
 body {
-    max-width: 1980px;
+    max-width: 1280px;
     margin: auto;
     background-color: black;
     font-family: var(--main-font);
@@ -28,25 +28,198 @@ body, html {
   height: 100%;
 }
 
+@media (max-width: 768px) {
+
 nav {
     display: flex;
-    padding: 20px 50px 20px 50px;
+    flex-direction: row;
+}
+
+nav .logo {
+    width: 50%;
 }
 
 .logo img {
-    width:239px;
-    height: 80px;
+    width: 100%;
     justify-content: flex-start;
 }
 
+nav .menu-items {
+    display: flex;
+    flex-direction: column; 
+    font-size: 0.8rem;
+    width: 50%;
+    padding: 20px 10px 0 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* what exactly that mean? flex:1 */
+    flex: 1;
+}
+
+.social-accounts {
+    display: flex;
+    align-items: flex-end;
+    margin-right: -5px;
+    order: 1;
+}
+
+.social-accounts img {
+    height: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color:  var(--main-text-color);
+}
+
+header {
+    background-image: url("../img/background_home.jpg");
+    background-size: cover;
+    background-position: center;
+    /* min-height: 400px; */
+    width: 100%;
+}
+
+.banner {
+    /* width: 100%; */
+    align-items: center;
+    min-height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+header .banner h1 {
+    font-size: 1.5rem;
+    font-family: var(--header-font);
+    padding-bottom: 20px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    order: -1;
+
+}
+
+header .banner h2 {
+    font-size: 1.3rem;
+    font-family: var(--subheader-font);
+    padding-left: 5px;
+    letter-spacing: 4px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+button.scroll {
+    display: none;
+}
+
+.button-container {
+    margin-top: 40px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+section h3 {
+    font-size: 2rem;
+    font-family: var(--section-font);
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    padding: 30px 0px 20px 0px;
+
+}
+
+h4 {
+    font-size: 1.3rem;
+    font-family: var(--section-font);
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+/* .collections-slider-container {
+    display: grid;
+    grid-template-columns: 60%;
+
+}  */
+
+
+.collections-slider-container {
+   display: flex;
+   flex-direction: column;
+   width: 80%;
+   margin: auto;
+} 
+
+.slider-article {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+} 
+
+.slider-article img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.slider-article .collection-info {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+#about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+}
+
+@media (min-width: 769px) { 
+
+nav {
+    display: flex;
+    padding: 20px 30px 20px 30px;
+    flex-direction: row;
+}
+
+nav .logo {
+    width: 50%;
+}
+
+.logo img {
+    width: 250px;
+    height: 90px;
+    justify-content: flex-start;
+}
 
 nav .menu-items {
-    font-size: 0.8rem;
-    flex-direction: row;
     display: flex; 
-    justify-content: space-between;
+    font-size: 0.8rem;
+    width: 50%;
+    justify-content: space-around;
+    padding-top: 40px;
+    /* what exactly that mean? flex:1 */
     flex: 1;
     align-items: center;
+}
+
+.social-accounts {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .social-accounts img {
@@ -56,8 +229,6 @@ nav .menu-items {
 
 ul {
     list-style-type: none;
-    justify-content: flex-end;
-    display: flex;
 }
 
 a {
@@ -158,6 +329,6 @@ h4 {
 footer {
     text-align: center;
 }
-
+}
 
 
