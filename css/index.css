@@ -279,6 +279,10 @@ button {
         font-weight: lighter;
     }
 
+    button.scroll {
+        display: none;
+    }
+    
     .button-container {
         width:100%;
         display: flex;
