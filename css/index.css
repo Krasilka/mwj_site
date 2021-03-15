@@ -219,7 +219,7 @@ h4 {
         font-weight: lighter;
     }
 
-    button.scroll {
+    button .scroll {
         display: none;
     }
 
