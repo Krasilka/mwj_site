@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1280px;
+    margin: auto;
+    background-color: black;
+    font-family: var(--main-font);
+    color: var(--main-text-color);
+    font-size: var(--main-font-size);
+}
+
+body, html {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color:  var(--main-text-color);
+}
+
+a:hover {
+    cursor: pointer;
+    color: var(--main-text-color);
+}
+
+button {
+    font-family: var(--section-font);
+}
+
+button.scroll {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav .logo {
+        width: 50%;
+    }
+
+    .logo img {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    nav .menu-items {
+        display: flex;
+        flex-direction: column; 
+        font-size: 0.8rem;
+        width: 50%;
+        padding: 20px 10px 0 0;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex: 1;
+    }
+
+    .social-accounts {
+        display: flex;
+        align-items: flex-end;
+        margin-right: -5px;
+        order: 1;
+    }
+
+    .social-accounts img {
+        height: 20px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    section h3 {
+        font-size: 2rem;
+        font-family: var(--section-font);
+        text-align: center;
+        margin-top: 10%;
+        padding: 30px 0 20px 0;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+}
+
+@media (min-width: 769px) { 
+
+    nav {
+        display: flex;
+        padding: 20px 30px 20px 30px;
+        flex-direction: row;
+    }
+
+    nav .logo {
+        width: 50%;
+    }
+
+    .logo img {
+        width: 250px;
+        height: 90px;
+        justify-content: flex-start;
+    }
+
+    nav .menu-items {
+        display: flex; 
+        font-size: 0.8rem;
+        width: 50%;
+        justify-content: space-around;
+        padding-top: 40px;
+        flex: 1;
+        align-items: center;
+    }
+
+    .social-accounts {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .social-accounts img {
+        height: 20px;
+        margin: 5px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
