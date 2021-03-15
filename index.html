@@ -4,11 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MostWantedJewelry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <div class="backgroung"></div>
     <header id="home">
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="#home">
+                    <img src="img/in line .webp" alt="Most Wanted logo image">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                <a class="nav-link" href="#shop-collections">Collections</a>
+                <a class="nav-link" href="shop.html">Shop&nbsp;All</a>
+                <a class="nav-link" href="#about-us">About&nbsp;us</a>
+                <a class="nav-link" href="#contacts">Contacts</a>
+               
+            </div>
+            </div>
+        </div>
+</nav> -->
         <nav>
             <div class="logo">
                 <a href="#home">
@@ -59,14 +83,108 @@
     <main>
         <section id="shop-collections">
             <h3>SHOP COLLECTIONS</h3>
-            <div class="collections-slider-container">
+
+            <div id="carouselCollectionsIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselCollectionsIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselCollectionsIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselCollectionsIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselCollectionsIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselCollectionsIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselCollectionsIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner collections-slider-container">
+                    <div class="carousel-item active">
+                        <div class="slider-article" id="rough-perfection">
+                            <img src="img/slider/rough_collect_slider.jpg" class="d-block" alt="Rough perfection collection photo" width="100">
+                            <div class="collection-info">
+                                <h4>ROUGH PERFECTION</h4>
+                                <p>This is your Service description. Use this space to describe what the service entails, benefits for users and any other important information. </p>
+                                <form method="get" action="shop.html">
+                                    <button class="shop-now btn btn-dark" type="submit" value="Shop now">Shop now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slider-article" id="gone-wild">
+                            <img src="img/slider/gonewild_collect_slider.jpg" class="d-block" alt="Gone wild collection photo" width="100">
+                            <div class="collection-info">
+                                <h4>GONE WILD</h4>
+                                <p>This is your Service description. Use this space to describe what the service entails, benefits for users and any other important information.</p>
+                                <form method="get" action="shop.html">
+                                    <button class="shop-now btn btn-dark" type="submit" value="Shop now">Shop now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slider-article" id="the-glow">
+                            <img src="img/slider/glow_collect_slider.jpg" class="d-block" alt="Glow collection photo" width="100">
+                            <div class="collection-info">
+                                <h4>THE GLOW</h4>
+                                <p>This is your Service description. Use this space to describe what the service entails, benefits for users and any other important information.</p>
+                                <form method="get" action="shop.html">
+                                    <button class="shop-now btn btn-dark" type="submit" value="Shop now">Shop now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slider-article" id="liquid">
+                            <img src="img/slider/liquid_collect_slider.jpg" class="d-block" alt="Liquid collection photo" width="100">
+                            <div class="collection-info">
+                                <h4>LIQUID</h4>
+                                <p>This is your Service description. Use this space to describe what the service entails, benefits for users and any other important information.</p>
+                                <form method="get" action="shop.html">
+                                    <button class="shop-now btn btn-dark" type="submit" value="Shop now">Shop now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="carousel-item">
+                        <div class="slider-article" id="the-sequence">
+                            <img src="img/slider/sequence_collect_slider.jpg" class="d-block" alt="Sequence collection photo" width="100">
+                            <div class="collection-info">
+                                <h4>THE SEQUENCE</h4>
+                                <p>This is your Service description. Use this space to describe what the service entails, benefits for users and any other important information.</p>
+                                <form method="get" action="shop.html">
+                                    <button class="shop-now btn btn-dark" type="submit" value="Shop now">Shop now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slider-article" id="sensual">
+                            <img src="img/slider/sensual_collect_slider.jpg" class="d-block" alt="Sensual collection photo" width="100" >
+                            <div class="collection-info">
+                                <h4>SENSUAL</h4>
+                                <p>This is your Service description. Use this space to describe what the service entails, benefits for users and any other important information.</p>
+                                <form method="get" action="shop.html">
+                                    <button class="shop-now btn btn-dark" type="submit" value="Shop now">Shop now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCollectionsIndicators"  data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCollectionsIndicators"  data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- <div class="collections-slider-container">
                  <div class="slider-article" id="rough-perfection">
                     <img src="img/slider/rough_collect_slider.jpg" alt="Rough perfection collection photo" width="100">
                     <div class="collection-info">
                         <h4>ROUGH PERFECTION</h4>
                         <p>This is your Service description. Use this space to describe what the service entails, benefits for users and any other important information. </p>
                         <form method="get" action="shop.html">
-                            <button class="shop-now" type="submit">Shop now</button>
+                            <button class="shop-now btn btn-dark" type="submit" value="Shop now">Shop now</button>
                         </form>
                     </div>
                 </div>
@@ -76,7 +194,7 @@
                         <h4>GONE WILD</h4>
                         <p>This is your Service description. Use this space to describe what the service entails, benefits for users and any other important information.</p>
                         <form method="get" action="shop.html">
-                            <button class="shop-now" type="submit">Shop now</button>
+                            <button class="shop-now btn btn-dark" type="submit" value="Shop now">Shop now</button>
                         </form>
                     </div>
                 </div>
@@ -86,7 +204,7 @@
                         <h4>THE GLOW</h4>
                         <p>This is your Service description. Use this space to describe what the service entails, benefits for users and any other important information.</p>
                         <form method="get" action="shop.html">
-                            <button class="shop-now" type="submit">Shop now</button>
+                            <button class="shop-now btn btn-dark" type="submit" value="Shop now">Shop now</button>
                         </form>
                     </div>
                 </div>
@@ -96,7 +214,7 @@
                         <h4>LIQUID</h4>
                         <p>This is your Service description. Use this space to describe what the service entails, benefits for users and any other important information.</p>
                         <form method="get" action="shop.html">
-                            <button class="shop-now" type="submit">Shop now</button>
+                            <button class="shop-now btn btn-dark" type="submit" value="Shop now">Shop now</button>
                         </form>
                     </div>
                 </div>
@@ -106,7 +224,7 @@
                         <h4>THE SEQUENCE</h4>
                         <p>This is your Service description. Use this space to describe what the service entails, benefits for users and any other important information.</p>
                         <form method="get" action="shop.html">
-                            <button class="shop-now" type="submit">Shop now</button>
+                            <button class="shop-now btn btn-dark" type="submit" value="Shop now">Shop now</button>
                         </form>
                     </div>
                 </div>
@@ -116,20 +234,20 @@
                         <h4>SENSUAL</h4>
                         <p>This is your Service description. Use this space to describe what the service entails, benefits for users and any other important information.</p>
                         <form method="get" action="shop.html">
-                            <button class="shop-now" type="submit">Shop now</button>
+                            <button class="shop-now btn btn-dark" type="submit" value="Shop now">Shop now</button>
                         </form>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <section id="about-us">
-            <h3>ABOUT US</h3>
-            <p>Most Wanted Jewelry is a trendsetting online store, offering our first-rate products and exceptional customer service to shoppers from the comfort of their own homes. We’re a business made up of innovators and forward-thinkers, with the drive and wherewithal to constantly update and improve the online shopping experience.
-Our online store has become synonymous with quality, and we ensure a continuous variety of fantastic merchandise that fit any budget. Check it out and start shopping today.</p>
-            <form method="get" action="shop.html">
-                <button class="shop-now" type="submit">Shop now</button>
-            </form>
+                <h3>ABOUT US</h3>
+                <p>Most Wanted Jewelry is a trendsetting online store, offering our first-rate products and exceptional customer service to shoppers from the comfort of their own homes. We’re a business made up of innovators and forward-thinkers, with the drive and wherewithal to constantly update and improve the online shopping experience.
+                Our online store has become synonymous with quality, and we ensure a continuous variety of fantastic merchandise that fit any budget. Check it out and start shopping today.</p>
+                <form method="get" action="shop.html">
+                    <button class="shop-now btn btn-dark" type="submit" value="Shop now">Shop now</button>
+                </form>
         </section>
 
         <section id="contacts">
@@ -153,34 +271,34 @@ Our online store has become synonymous with quality, and we ensure a continuous 
                             </a>
                         </li>
             </ul>
-        <form method="POST" action="https://formspree.io/f/mnqokwwp">
-            <label>
-                <input name="name" type="text" placeholder="Name">
-            </label>
-            <br>
-            <label>
-                <input name="address" type="text" placeholder="Address">
-            </label>
-            <br>
-            <label>
-                <input name="email" type="text" placeholder="Emal" required> 
-            </label>
-            <br>
-            <label>
-                <input name="phone" type="text" placeholder="Phone" > 
-            </label>
-            <br>
-            <label>
-                <input name="subject" type="text" placeholder="Subject" > 
-            </label>
-            <br>
-            <label> 
-                <textarea name="message" placeholder="Type your message here..."></textarea>
-            </label>
-            <br>
-            <input type="submit">
-        </form>
-        <div id="googleMap">Map</div>
+            <form method="POST" action="https://formspree.io/f/mnqokwwp">
+                <label>
+                    <input name="name" type="text" placeholder="Name">
+                </label>
+                <br>
+                <label>
+                    <input name="address" type="text" placeholder="Address">
+                </label>
+                <br>
+                <label>
+                    <input name="email" type="text" placeholder="Emal" required> 
+                </label>
+                <br>
+                <label>
+                    <input name="phone" type="text" placeholder="Phone" > 
+                </label>
+                <br>
+                <label>
+                    <input name="subject" type="text" placeholder="Subject" > 
+                </label>
+                <br>
+                <label> 
+                    <textarea name="message" placeholder="Type your message here..."></textarea>
+                </label>
+                <br>
+                <button class="shop-now btn btn-dark" type="submit" value="Submit">Submit</button>
+            </form>
+            <div id="googleMap">Map</div>
         </section>
     </main>
     <footer>
@@ -190,10 +308,10 @@ Our online store has become synonymous with quality, and we ensure a continuous 
                 <input name="email" type="text" placeholder="Email Address" required>
             </label>
             <br>
-            <input type="submit" value="Subsribe">
+            <button class="shop-now btn btn-dark btn-block" type="submit" value="Subscribe">Subscribe</button>
         </form>
         <p>©2020 by Most Wanted Jewelry. Proudly created with Wix.com</p>
     </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>
