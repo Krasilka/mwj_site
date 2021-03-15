@@ -39,7 +39,7 @@ button {
 
 .collections-slider-container {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     width: 80%;
     margin: auto;
 }  
@@ -282,7 +282,7 @@ button {
     button.scroll {
         display: none;
     }
-    
+
     .button-container {
         width:100%;
         display: flex;
