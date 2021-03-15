@@ -52,3 +52,7 @@ footer {
     align-items: center;
     margin-top: 5%;
 } 
+
+    button .scroll {
+        display: none;
+    }
