@@ -279,7 +279,7 @@ button {
         font-weight: lighter;
     }
 
-    button.scroll {
+    button .scroll {
         display: none;
     }
     
