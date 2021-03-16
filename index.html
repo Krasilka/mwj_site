@@ -17,6 +17,8 @@
                     <img src="img/in line .webp" alt="Most Wanted logo image">
                 </a>
             </div>
+            <!-- <label class="burger-icon" for ="burger-checkbox"><img src="img/mobile-menu.png" width="10%"></label>
+            <input type="checkbox" id='burger-checkbox'> -->
             <ul class="menu-items">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#shop-collections">Collections</a></li>
@@ -229,57 +231,67 @@
         </section>
 
         <section id="contacts">
-            <h3>CONTACT US</h3>
-            <p>Please don’t hesitate to contact us with any comments, questions, or special requests.</p>
-            <p>66 Velyka Vasylkivska Street, Kyiv, Ukraine 03187</p>
-            <a href = "mailto:mwj.mostwantedjewelry@gmail.com">mwj.mostwantedjewelry@gmail.com</a>
-            <ul class="social-accounts">
-                        <li class="insta">
-                            <a href="https://www.instagram.com/most.wanted.jewelry_world/">
-                                <img src="img/instagram.webp" width="20" alt="Instagram icon">
-                            </a></li>
-                        <li class="pinterest">
-                            <a href="https://www.pinterest.com/mostwantedjewelry/most-wanted-jewelry/">
-                                <img src="img/Pinterest.webp" width="20" alt="Pinterest icon">
-                            </a>
-                        </li>
-                        <li class="fb">
-                            <a href="https://www.facebook.com/most.wanted.jewelry_world">
-                                <img src="img/Facebook.webp" width="20" alt="Facebook icon">
-                            </a>
-                        </li>
-            </ul>
-            <form method="POST" action="https://formspree.io/f/mnqokwwp">
-                <label>
-                    <input name="name" type="text" placeholder="Name">
-                </label>
-                <br>
-                <label>
-                    <input name="address" type="text" placeholder="Address">
-                </label>
-                <br>
-                <label>
-                    <input name="email" type="text" placeholder="Emal" required> 
-                </label>
-                <br>
-                <label>
-                    <input name="phone" type="text" placeholder="Phone" > 
-                </label>
-                <br>
-                <label>
-                    <input name="subject" type="text" placeholder="Subject" > 
-                </label>
-                <br>
-                <label> 
-                    <textarea name="message" placeholder="Type your message here..."></textarea>
-                </label>
-                <br>
-                <button class="shop-now btn btn-dark" type="submit" value="Submit">Submit</button>
-            </form>
-            <div id="googleMap">Map</div>
+            <div class = 'contact-info row'>
+                <div class="contact-us">
+                    <h3>CONTACT US</h3>
+                    <p>Please don’t hesitate to contact us with any comments, questions, or special requests.</p>
+                    <p>66 Velyka Vasylkivska Street, Kyiv, Ukraine 03187</p>
+                    <a href = "mailto:mwj.mostwantedjewelry@gmail.com">mwj.mostwantedjewelry@gmail.com</a>
+                    <ul class="social-accounts">
+                            <li class="insta">
+                                <a href="https://www.instagram.com/most.wanted.jewelry_world/">
+                                    <img src="img/instagram.webp" width="20" alt="Instagram icon">
+                                </a></li>
+                            <li class="pinterest">
+                                <a href="https://www.pinterest.com/mostwantedjewelry/most-wanted-jewelry/">
+                                    <img src="img/Pinterest.webp" width="20" alt="Pinterest icon">
+                                </a>
+                            </li>
+                            <li class="fb">
+                                <a href="https://www.facebook.com/most.wanted.jewelry_world">
+                                    <img src="img/Facebook.webp" width="20" alt="Facebook icon">
+                                </a>
+                            </li>
+                    </ul>
+                </div>    
+                <form class='contact-us-form' method="POST" action="https://formspree.io/f/mnqokwwp">
+                    <label>
+                        <input name="name" type="text" placeholder="Name">
+                    </label>
+                    <br>
+                    <label>
+                        <input name="address" type="text" placeholder="Address">
+                    </label>
+                    <br>
+                    <label>
+                        <input name="email" type="text" placeholder="Emal" required> 
+                    </label>
+                    <br>
+                    <label>
+                        <input name="phone" type="text" placeholder="Phone" > 
+                    </label>
+                    <br>
+                    <label>
+                        <input name="subject" type="text" placeholder="Subject" > 
+                    </label>
+                    <br>
+                    <label> 
+                        <textarea name="message" placeholder="Type your message here..."></textarea>
+                    </label>
+                    <br>
+                    <button class="shop-now btn btn-dark" type="submit" value="Submit">Submit</button>
+                </form>
+                <a href="https://goo.gl/maps/HrRbMXP72ZXyDYLfA" target="_blank">
+                    <div id="map">
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.4290505397407!2d30.513494351295332!3d50.433108479372216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cefd4b6a3d1f%3A0x15e8994ed2a5bf22!2sVelyka%20Vasylkivska%20St%2C%2066%2C%20Kyiv%2C%20Ukraine%2C%2003150!5e0!3m2!1sen!2smx!4v1615920203978!5m2!1sen!2smx">
+                       </iframe>
+                    </div>
+                </a>
+            </div>    
         </section>
     </main>
     <footer>
+
         <h4>SUBSCRIBE TO GET 10% OFF</h4>
         <form id="subscribe" method="POST" action="https://formspree.io/f/mnqokwwp">
             <label>

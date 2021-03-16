@@ -20,6 +20,10 @@ h4 {
     font-weight: bolder;
 }
 
+nav .logo {
+    width: 50%;
+}
+
 @media (max-width: 768px) {
 
     nav {
@@ -27,13 +31,8 @@ h4 {
         flex-direction: row;
     }
 
-    nav .logo {
-        width: 50%;
-    }
-
     .logo img {
         width: 100%;
-        justify-content: flex-start;
     }
 
     nav .menu-items {
@@ -141,6 +140,24 @@ h4 {
         text-align: center;
         padding: 20px;
     }
+
+    section#contacts {
+        margin: auto;
+    }
+
+    .contact-info {
+        text-align: left;
+        margin-left: auto;
+    }
+
+    ul.social-accounts {
+        padding-left: 0;
+    }
+
+    #google-map {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
 }
 
 @media (min-width: 769px) { 
@@ -151,13 +168,9 @@ h4 {
         flex-direction: row;
     }
 
-    nav .logo {
-        width: 50%;
-    }
-
     .logo img {
-        width: 250px;
-        height: 90px;
+        max-width: 250px;
+        max-height: 90px;
         justify-content: flex-start;
     }
 
@@ -171,7 +184,7 @@ h4 {
         align-items: center;
     }
 
-    ul .social-accounts {
+    nav ul .social-accounts {
         display: flex;
         justify-content: center;
         padding: 0;
@@ -264,6 +277,34 @@ h4 {
 
     #about-us p {
         padding: 20px 50px 20px 50px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact-us {
+        width: 50%;
+    }
+
+    .contact-us h3 {
+        padding-top: 0;
+    }
+
+    .contact-us-form {
+        width: 50%;
+        padding-top: 20px;
+    }
+
+    .contact-us .social-accounts {
+        display: flex;
+        padding-left: 0;
+        flex-direction: row;
+    }
+
+    iframe {
+        margin-top: 10%;
     }
 }
 

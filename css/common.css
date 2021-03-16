@@ -28,6 +28,40 @@ body, html {
     height: 100%;
 }
 
+
+@media (max-width: 768px) {
+   
+    ul.menu-items {
+        display: none;
+    }
+
+    label {
+        text-align: right;
+        margin-top: 5%;
+        margin-right: 5%;
+    }
+
+    /* .shopping-bag {
+        
+    } */
+
+    /* nav input:checked ~ .menu-items {
+        display: block;
+    } */
+}
+
+@media (min-width: 769px) {    
+
+    .burger-icon {
+        display: none;
+    }
+
+}
+
+#burger-checkbox {
+    display: none;
+}
+
 ul {
     list-style-type: none;
 }
@@ -53,6 +87,6 @@ footer {
     margin-top: 5%;
 } 
 
-    button .scroll {
-        display: none;
-    }
+button.scroll {
+    display: none;
+}
