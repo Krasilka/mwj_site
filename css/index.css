@@ -273,19 +273,29 @@ nav .logo {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
     #about-us p {
-        padding: 20px 50px 20px 50px;
+        padding: 20px 0 20px 0;
+    }
+
+    section#contacts {
+        margin: auto;
     }
 
     .contact-info {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        margin-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
-    .contact-us {
-        width: 50%;
+    .contact-us p, a{
+        padding-left: 5px;
     }
 
     .contact-us h3 {
@@ -293,18 +303,21 @@ nav .logo {
     }
 
     .contact-us-form {
-        width: 50%;
         padding-top: 20px;
     }
 
     .contact-us .social-accounts {
         display: flex;
-        padding-left: 0;
         flex-direction: row;
+        justify-content: center;
+        padding-top: 5px;
     }
 
     iframe {
-        margin-top: 10%;
+        grid-column-start: span 2;
+        margin-top: 5%;
+        height: 300px;
+        width: 200%;
     }
 }
 
