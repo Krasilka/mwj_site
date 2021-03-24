@@ -67,6 +67,8 @@ function renderProducts (productList) {
     }
 }
 
+//test
+
 renderProducts(JSON.parse(productsJSON));
 
 
