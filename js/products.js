@@ -48,26 +48,24 @@ const productsJSON =
 ]`;
 
 function renderProducts (productList) {
-    const productsContainer = document.querySelector('.container .row');
+    const productsContainer = document.querySelector('.product-list .row');
 
     productsContainer.innerHTML = '';
 
     for (const item of productList) {
         productsContainer.innerHTML += `
-        <div class="col">
-            <div class="card product" style="width: 15rem;" style="height: 18rem;">
-                <img src="img/products/${item.image}" class="card-img-top" alt="${item.title}">
+        <div class="col" align="center">
+            <div class="card product text-light">
+                <img src="img/products/${item.image}" alt="${item.title}">
                 <div class="card-body">
-                    <h5 class="card-title">${item.title}</h5>
-                    <p class="card-text">${item.description}</p>
-                    <a href="#" class="btn btn-primary ">ADD TO CART</a>
+                    <h4>${item.title}</h4>
+                    <p class="card-text text-truncate">${item.price}</p>
+                    <button class="add-to-cart btn btn-dark" type="submit" value="Add to cart">Add to Cart</button>
                 </div>
             </div>
         </div>`
     }
 }
-
-//test
 
 renderProducts(JSON.parse(productsJSON));
 

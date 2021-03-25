@@ -24,6 +24,47 @@ nav .logo {
     width: 50%;
 }
 
+button.shop-now.btn {
+    border-radius: 25px;
+    width: 100%;
+}
+
+.contact-us-form input, form#subscribe input  {
+    width: 100%;
+    margin-bottom:1%;
+    background-color: black;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 0.5px;
+}
+
+.contact-us-form textarea {
+    width: 100%;
+    margin-bottom:1%;
+    background-color: black;
+    border-width: 0.5px;
+    border-color: rgb(255, 255, 255);
+}
+
+.contact-us-form label {
+    width: 100%;
+}
+
+iframe {
+    margin-top: 5%;
+    width: 100%;
+}
+
+form#subscribe button {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+form#subscribe {
+    width: 90%;
+    margin-top: 1.5%;
+}
+
 @media (max-width: 768px) {
 
     nav {
@@ -143,6 +184,16 @@ nav .logo {
 
     section#contacts {
         margin: auto;
+        width: 90%;
+    }
+
+    .contact-us p {
+        margin-bottom: 0;
+    }
+
+    .contact-us-form label {
+        width: 100%;
+        margin-top:0;
     }
 
     .contact-info {
@@ -152,11 +203,6 @@ nav .logo {
 
     ul.social-accounts {
         padding-left: 0;
-    }
-
-    #google-map {
-        margin-top: 10%;
-        margin-bottom: 10%;
     }
 }
 
@@ -283,6 +329,7 @@ nav .logo {
 
     section#contacts {
         margin: auto;
+        width: 90%;
     }
 
     .contact-info {
@@ -309,8 +356,8 @@ nav .logo {
     .contact-us .social-accounts {
         display: flex;
         flex-direction: row;
-        justify-content: center;
         padding-top: 5px;
+        padding-left: 0;
     }
 
     iframe {
@@ -319,6 +366,22 @@ nav .logo {
         height: 300px;
         width: 200%;
     }
+
+    form#subscribe {
+        width: 300px;
+    }
+
+    form#subscribe input, label {
+        width: 100%;
+    }
+    
+
+@media (min-width: 1024px) { 
+
+    .carousel-control-next, .carousel-control-prev {
+        width: 5%;
+    }
+}
 }
 
 
