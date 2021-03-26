@@ -35,6 +35,25 @@ body, html {
     padding-left: 1%;
   }
 
+button.shop-now.btn {
+    border-radius: 25px;
+    width: 100%;
+}
+
+form#subscribe button {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+form#subscribe input  {
+    width: 100%;
+    margin-bottom:1%;
+    background-color: black;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 0.5px;
+}
+
 @media (max-width: 768px) {
    
     ul.menu-items {
@@ -86,3 +105,4 @@ footer {
 button.scroll {
     display: none;
 }
+

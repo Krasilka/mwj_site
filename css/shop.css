@@ -13,16 +13,6 @@ button.add-to-cart.btn {
     max-width: 18rem;
 }
 
-/* .card-body {
-    flex-basis: 10em;
-}
-
-.card img {
-    /* height: 50%; */
-    /* flex-basis: 10em; */
-/* } */
-
-
 h4 {
     font-size: 1rem;
     font-family: var(--section-font);
@@ -115,17 +105,18 @@ h4 {
         height: 20px;
         margin: 5px;
     }
+
+
+    form#subscribe {
+        width: 300px;
+    }
+
+    form#subscribe input, label {
+        width: 100%;
+    }
 }
+
 @media (min-width: 1024px) { 
-
-    /* .row {
-        margin-left: 15%;
-    } */
-
-    /* .container#product-list .col {
-        margin-top: 5%; 
-        margin-inline-end: 5%;
-    } */
 
     h4 {
         font-size: 1rem;

@@ -60,7 +60,7 @@ function renderProducts (productList) {
                 <div class="card-body">
                     <h4>${item.title}</h4>
                     <p class="card-text text-truncate">${item.price}</p>
-                    <button class="add-to-cart btn btn-dark" type="submit" value="Add to cart">Add to Cart</button>
+                    <button type="button" class="add-to-cart btn btn-dark" data-toggle="modal" data-target="#cartModal" value="Add to cart">Add to Cart</button>
                 </div>
             </div>
         </div>`
@@ -69,6 +69,46 @@ function renderProducts (productList) {
 
 renderProducts(JSON.parse(productsJSON));
 
+function itemAddedToCartModal() {
+    modalProductContainer = document.querySelector('.modal#cartModal tbody');
+    modalProductContainer.innerHTML = '';
+    let productCards = document.querySelectorAll('.product-list .add-to-cart');
+    let clickedItemIndex = function () {
+       for (let i = 0; i < productCards.length; i++) {
+            (function(index){
+                productCards[i].onclick = function(){
+                    alert(index);
+                    return index;
+                }    
+            })(i); 
+        }};
+        // clickedItemIndex();
+        let name = document.querySelectorAll('.col .card h4')[clickedItemIndex()];
+        // let name = document.querySelectorAll('.col .card h4')[clickedItemIndex()].innerText;
+        let productList = JSON.parse(productsJSON);
+        let item = productList.filter(function (entry, name) { return entry.title === name; });
 
+    // let item = productList[clickedItem];
+    
+    let addedProduct = `
+            <tr>
+                <td class="w-25">
+                  <img src="/img/products/${item.image}" class="img-fluid img-thumbnail" alt="Sheep">
+                </td>
+                <td>${item.title}</td>
+                <td>${item.price}</td>
+                <td class="qty">1</td>
+                <td>
+                    <button class="btn"><i class="fa fa-close"></i></button>
+                  </a>
+                </td>
+              </tr>
+    `
+    modalProductContainer.innerHTML += addedProduct;
 
+    $('#cartModal').modal('show');
+}
 
+  itemAddedToCartModal();
+
+    

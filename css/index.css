@@ -24,10 +24,10 @@ nav .logo {
     width: 50%;
 }
 
-button.shop-now.btn {
+/* button.shop-now.btn {
     border-radius: 25px;
     width: 100%;
-}
+} */
 
 .contact-us-form input, form#subscribe input  {
     width: 100%;
@@ -53,11 +53,6 @@ button.shop-now.btn {
 iframe {
     margin-top: 5%;
     width: 100%;
-}
-
-form#subscribe button {
-    margin-top: 2%;
-    margin-bottom: 2%;
 }
 
 form#subscribe {

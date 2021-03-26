@@ -1,0 +1,61 @@
+/* ADD TO CART MODAL */
+
+.container {
+    padding: 2rem 0rem;
+  }
+  
+  .table-image {
+    
+    thead {
+      td, th {
+        border: 0;
+        color: #666;
+        font-size: 0.8rem;
+      }
+    }
+    
+    td, th {
+      vertical-align: middle;
+      text-align: center;
+      
+      &.qty {
+        max-width: 2rem;
+      }
+    }
+  }
+  
+  .price {
+    margin-left: 1rem;
+  }
+  
+  .modal-footer {
+    padding-top: 0rem;
+  }
+
+  .modal-content {
+      background-color: black;
+      border: 0.5px solid white;
+  }
+
+  .modal-header h4 {
+      font-size: 1.3rem;
+  }
+
+  .table-dark {
+    --bs-table-bg: none;
+  }
+
+  th {
+    font-family: var(--section-font);
+  }
+
+.img-fluid {
+    max-width: 50%;
+}
+
+.img-thumbnail {
+    border: 0.1px solid white;
+    padding: 0;
+}
+
+

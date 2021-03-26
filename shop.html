@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/modals.css">
+
 </head>
 <body>
     <header id="home">
@@ -55,8 +57,6 @@
             </div>
         </div>
         </div>
-
-
             <!-- <article class="product">
                 <img src="img/products/waves_ring.jpg" alt="Waves ring photo" width="100">
                 <div class="product-name">Waves ring</div>
@@ -72,6 +72,42 @@
                 <div class="product-name">Drops ring</div>
                 <button class="add-to-cart">Add to Cart</button>
             </article> -->
+  
+  
+  <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h4 class="modal-title" id="cartModalLabel">
+            Added to Cart
+          </h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image table-dark">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Product</th>
+                <th scope="col">Price</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Remove</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table> 
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     </main>
    <footer>
         <h4>SUBSCRIBE TO GET 10% OFF</h4>
@@ -80,11 +116,15 @@
                 <input name="email" type="text" placeholder="Email Address" required>
             </label>
             <br>
-            <input type="submit" value="Subscribe">
+            <button class="shop-now btn btn-dark btn-block" type="submit" value="Subscribe">Subscribe</button>
         </form>
         <p>©2020 by Most Wanted Jewelry. Proudly created with Wix.com</p>
     </footer>
+
     <script src="js/products.js"></script>  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>
