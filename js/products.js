@@ -77,7 +77,6 @@ function itemAddedToCartModal() {
        for (let i = 0; i < productCards.length; i++) {
             (function(index){
                 productCards[i].onclick = function(){
-                    alert(index);
                     return index;
                 }    
             })(i); 
