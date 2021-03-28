@@ -1,0 +1,83 @@
+[
+    {
+        "id": "1",
+        "collection": "ROUGH PERFECTION",
+        "title": "Rocky mountains ring",
+        "type": "ring",
+        "image": "rocky-mountains.jpg",
+        "description": "Rough handmade sterling silver ring.",
+        "price": "3300 uah"
+    },
+    {
+        "id": "2",
+        "collection": "GONE WILD",
+        "title": "Leopard ring",
+        "type": "ring",
+        "image": "leopard-ring.jpg",
+        "description": "Handmade sterling silver ring with vegan pony leather. \nGold plated",
+        "price": "3200 uah"
+    },
+    {
+        "id": "3",
+        "collection": "THE GLOW",
+        "title": "Drops ring",
+        "type": "ring",
+        "image": "drops.jpg",
+        "description": "Adjustbale sterling silver ring. \nHandmade item",
+        "price": "2600 uah"
+    },
+    {
+        "id": "4",
+        "collection": "SENSUAL",
+        "title": "Lady on ring",
+        "type": "ring",
+        "image": "lady-ring.jpg",
+        "description": "Handmade sterling silver ring. \nOxidized finish",
+        "price": "3200 uah"
+    },
+    {
+        "id": "5",
+        "collection": "THE SEQUENCE",
+        "title": "Lock chain",
+        "type": "ring",
+        "image": "lock-chain.jpg",
+        "description": "Solid chain ring with lock. \nSterling silver. Handmade item",
+        "price": "1800 uah"
+    },
+    {
+        "id": "6",
+        "collection": "ROUGH PERFECTION",
+        "title": "Dots wide ring",
+        "type": "ring",
+        "image": "black-dots.jpg",
+        "description": "Wide oxidized ring with dots. \nSterling silver. Handmade item",
+        "price": "2800 uah"
+    },
+    {
+        "id": "7",
+        "collection": "GONE WILD",
+        "title": "Black pony ring",
+        "type": "ring",
+        "image": "black-pony.jpg",
+        "description": "Wide silver ring with vegan pony leather. \nSterling silver. Handmade item",
+        "price": "3100 uah"
+    },
+    {
+        "id": "8",
+        "collection": "ROUGH PERFECTION",
+        "title": "Mountains",
+        "type": "ring",
+        "image": "mountains.jpg",
+        "description": "Wide rough ring with white topaz. \nSterling silver. Handmade item",
+        "price": "3200 uah"
+    },
+    {
+        "id": "9",
+        "collection": "LIQUID",
+        "title": "Waves ring",
+        "type": "ring",
+        "image": "waves-ring.jpg",
+        "description": "Wide silver ring. Sterling silver. Handmade item",
+        "price": "2800 uah"
+    }
+]

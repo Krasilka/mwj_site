@@ -3,37 +3,37 @@ const collectionsSliderJSON = `
     {
         "id": "rough-perfection",
         "title": "ROUGH PERFECTION",
-        "image": "rough_collect_slider.jpg",
+        "image": "rough-collect-slider.jpg",
         "description": "This is your Service description. Use this space to describe what the service entails, benefits for users and any other important information."
     },
     {
         "id": "gone-wild",
         "title": "GONE WILD",
-        "image": "gonewild_collect_slider.jpg",
+        "image": "gonewild-collect-slider.jpg",
         "description": "This is your Service description. Use this space to describe what the service entails, benefits for users and any other important information."
     },
     {
         "id": "the-glow",
         "title": "THE GLOW",
-        "image": "glow_collect_slider.jpg",
+        "image": "glow-collect-slider.jpg",
         "description": "This is your Service description. Use this space to describe what the service entails, benefits for users and any other important information."
     },
     {
         "id": "liquid",
         "title": "LIQUID",
-        "image": "liquid_collect_slider.jpg",
+        "image": "liquid-collect-slider.jpg",
         "description": "This is your Service description. Use this space to describe what the service entails, benefits for users and any other important information."
     },
     {
         "id": "the-sequence",
         "title": "THE SEQUENCE",
-        "image": "sequence_collect_slider.jpg",
+        "image": "sequence-collect-slider.jpg",
         "description": "This is your Service description. Use this space to describe what the service entails, benefits for users and any other important information."
     },
     {
         "id": "sensual",
         "title": "SENSUAL",
-        "image": "sensual_collect_slider.jpg",
+        "image": "sensual-collect-slider.jpg",
         "description": "This is your Service description. Use this space to describe what the service entails, benefits for users and any other important information."
     }
 ]

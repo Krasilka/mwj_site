@@ -4,6 +4,10 @@
     padding: 2rem 0rem;
   }
   
+  tr {
+    vertical-align: baseline;
+  }
+  
   .table-image {
     
     thead {
@@ -22,6 +26,11 @@
         max-width: 2rem;
       }
     }
+  }
+
+
+  .product-image {
+    width: 30%;
   }
   
   .price {
