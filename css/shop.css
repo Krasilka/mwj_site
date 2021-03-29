@@ -31,8 +31,9 @@ h4 {
 @media (max-width: 768px) {
 
     nav {
-        display: flex;
-        flex-direction: row;
+        display: none;
+        /* display: flex;
+        flex-direction: row; */
     }
 
     nav .logo {
