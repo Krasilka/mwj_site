@@ -7,3 +7,4 @@ menuIcon.addEventListener('click', () => {
     mobileMenuItems.classList.toggle('active');
 })
 
+//TODO navigation menu disappear on scroll for mobile view
