@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MostWantedJewelry</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/shop.css">
     <link rel="stylesheet" href="css/modals.css">
 
 </head>
+
 <body>
     <header id="home">
-        <nav>
+        <nav class="navbar">
             <div class="logo">
                 <a href="index.html#home">
                     <img src="img/logo-inline.webp" alt="Most Wanted logo">
                 </a>
             </div>
-            <ul class="menu-items">
+            <div class="mobile-nav">
+                <div>
+                    <a href="cart.html">
+                        <img class="cart" src="img/shopping-bag.svg" alt="Shopping cart">
+                    </a>
+                </div>
+                <div class="hamburger-icon hamburger-menu">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </div>
+            <ul class="menu-items hamburger-menu">
                 <li><a href="index.html#home">Home</a></li>
                 <li><a href="index.html#shop-collections">Collections</a></li>
                 <li><a href="shop.html">Shop</a></li>
-                <li><a href="index.html#about-us">About&nbsp;us</a></li>
+                <li><a href="index.html#shop-collections#about-us">About&nbsp;us</a></li>
                 <li><a href="index.html#contacts">Contacts</a></li>
                 <li>
                     <ul class="social-accounts">
                         <li class="insta">
                             <a href="https://www.instagram.com/most.wanted.jewelry_world/">
                                 <img src="img/instagram.webp" alt="Instagram icon">
-                            </a></li>
+                            </a>
+                        </li>
                         <li class="pinterest">
                             <a href="https://www.pinterest.com/mostwantedjewelry/most-wanted-jewelry/">
                                 <img src="img/pinterest.webp" alt="Pinterest icon">
@@ -50,6 +66,9 @@
         </nav>
     </header>
     <main>
+        <div class="sorting">
+            <!--TODO: sorting will be here-->
+        </div>
         <div class="container" id="product-list">
             <div class='product-list'>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -57,24 +76,6 @@
                 </div>
             </div>
         </div>
-            <!-- <article class="product">
-                <img src="img/products/waves_ring.jpg" alt="Waves ring photo" width="100">
-                <div class="product-name">Waves ring</div>
-                <button class="add-to-cart">Add to Cart</button>
-            </article>
-            <article class="product">
-                <img src="img/products/lady_ring.jpg" alt="Lady ring photo" width="100">
-                <div class="product-name">Lady ring</div>
-                <button class="add-to-cart">Add to Cart</button>
-            </article> -->
-            <!-- <article class="product">
-                <img src="img/products/drops.jpg" alt="Drops ring photo" width="100">
-                <div class="product-name">Drops ring</div>
-                <button class="add-to-cart">Add to Cart</button>
-            </article> -->
-  
-  
-
     </main>
     <footer>
         <h4>SUBSCRIBE TO GET 10% OFF</h4>
@@ -85,58 +86,72 @@
             <br>
             <button class="shop-now btn btn-dark btn-block" type="submit" value="Subscribe">Subscribe</button>
         </form>
-        <p>©2020 by Most Wanted Jewelry. Proudly created with Wix.com</p>
+        <p>©2020 by Most Wanted Jewelry.</p>
     </footer>
 
-<!-- Modal Added to Cart -->
-  <div class="modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="addToCartModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header border-bottom-0">
-          <h4 class="modal-title" id="addToCartModalLabel">
-            Added to Cart
-          </h4>
-          <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+    <!-- Modal Added to Cart -->
+    <div class="modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="addToCartModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <h4 class="modal-title" id="addToCartModalLabel">
+                        Added to Cart
+                    </h4>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-image table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Product</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Qty</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="product-image"><img src="" class="img-cart-modal img-fluid img-thumbnail"
+                                        alt=""></td>
+                                <td class="product-title-modal"></td>
+                                <td class="product-price-modal"></td>
+                                <td class="qty">1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer border-top-0 d-flex justify-content-between">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary">Go to Cart</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          <table class="table table-image table-dark">
-            <thead>
-              <tr>
-                <th scope="col"></th>
-                <th scope="col">Product</th>
-                <th scope="col">Price</th>
-                <th scope="col">Qty</th>
-              </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="product-image"><img src="" class="img-cart-modal img-fluid img-thumbnail" alt=""></td>
-                    <td class="product-title-modal"></td>
-                    <td class="product-price-modal"></td>
-                    <td class="qty">1</td>
-                </tr>
-            </tbody>
-          </table> 
-        </div>
-        <div class="modal-footer border-top-0 d-flex justify-content-between">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-secondary">Go to Cart</button>
-        </div>
-      </div>
     </div>
-  </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"
+        integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0"
+        crossorigin="anonymous"></script>
 
-    <script src="js/products-service.js"></script>  
-    <script src="js/cart.js"></script> 
-    <script src="js/product-list.js"></script>  
-    <script src="js/shop.js"></script>  
-   </body>
+    <script src="js/navigation.js"></script>
+    <script src="js/products-service.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/product-list.js"></script>
+    <script src="js/shop.js"></script>
+</body>
+
 </html>

@@ -53,10 +53,12 @@
     }
     
  @media (max-width: 768px) {
+/* NAVIGATION BAR and MENU*/
 
     nav {
             display: flex;
             flex-direction: row;
+            height: 100px;
     }
     
     nav .logo img {
@@ -139,6 +141,7 @@
     .social-accounts img {
         height: 20px;
     }
+    /*THE END OF NAV BAR and MENU*/
 
     header {
         background-image: url("../img/background-home.jpg");
@@ -254,6 +257,8 @@
 
 @media (min-width: 769px) { 
 
+    /*NAVIGATION BAR and MENU*/
+
     nav {
         display: flex;
         padding: 20px 30px 20px 30px;
@@ -299,6 +304,7 @@
     .mobile-nav-menu-wrap .menu-items {
         display: none;
     }
+    /*THE END OF NAVIGATION BAR and MENU*/
 
     header {
         background-image: url("../img/background-home.jpg");
