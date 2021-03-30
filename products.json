@@ -6,7 +6,7 @@
         "type": "ring",
         "image": "rocky-mountains.jpg",
         "description": "Rough handmade sterling silver ring.",
-        "price": "3300 uah"
+        "price": 3300
     },
     {
         "id": "2",
@@ -15,7 +15,7 @@
         "type": "ring",
         "image": "leopard-ring.jpg",
         "description": "Handmade sterling silver ring with vegan pony leather. \nGold plated",
-        "price": "3200 uah"
+        "price": 3200
     },
     {
         "id": "3",
@@ -24,7 +24,7 @@
         "type": "ring",
         "image": "drops.jpg",
         "description": "Adjustbale sterling silver ring. \nHandmade item",
-        "price": "2600 uah"
+        "price": 2600
     },
     {
         "id": "4",
@@ -33,7 +33,7 @@
         "type": "ring",
         "image": "lady-ring.jpg",
         "description": "Handmade sterling silver ring. \nOxidized finish",
-        "price": "3200 uah"
+        "price": 3200
     },
     {
         "id": "5",
@@ -42,7 +42,7 @@
         "type": "ring",
         "image": "lock-chain.jpg",
         "description": "Solid chain ring with lock. \nSterling silver. Handmade item",
-        "price": "1800 uah"
+        "price": 1800
     },
     {
         "id": "6",
@@ -51,7 +51,7 @@
         "type": "ring",
         "image": "black-dots.jpg",
         "description": "Wide oxidized ring with dots. \nSterling silver. Handmade item",
-        "price": "2800 uah"
+        "price": 2800
     },
     {
         "id": "7",
@@ -60,7 +60,7 @@
         "type": "ring",
         "image": "black-pony.jpg",
         "description": "Wide silver ring with vegan pony leather. \nSterling silver. Handmade item",
-        "price": "3100 uah"
+        "price": 3100
     },
     {
         "id": "8",
@@ -69,7 +69,7 @@
         "type": "ring",
         "image": "mountains.jpg",
         "description": "Wide rough ring with white topaz. \nSterling silver. Handmade item",
-        "price": "3200 uah"
+        "price": 3200
     },
     {
         "id": "9",
@@ -78,6 +78,6 @@
         "type": "ring",
         "image": "waves-ring.jpg",
         "description": "Wide silver ring. Sterling silver. Handmade item",
-        "price": "2800 uah"
+        "price": 2800
     }
 ]

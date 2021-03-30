@@ -7,9 +7,12 @@
     <title>MostWantedJewelry</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/shop.css">
     <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/cart.css">
+
 
 </head>
 
@@ -23,8 +26,9 @@
             </div>
             <div class="mobile-nav">
                 <div>
-                    <a href="cart.html">
+                    <a class="cart" href="cart.html">
                         <img class="cart" src="img/shopping-bag.svg" alt="Shopping cart">
+                        <span class="count badge badge-pill badge-danger">0</span>
                     </a>
                 </div>
                 <div class="hamburger-icon hamburger-menu">
@@ -59,9 +63,10 @@
                     </ul>
                 </li>
                 <li><a class="shopping-bag" href="cart.html">
-                        <img src="img/shopping-bag.svg" alt="Shopping cart">
-                    </a>
-                </li>
+                    <img src="img/shopping-bag.svg" alt="Shopping cart">
+                    <span class="count badge badge-pill badge-danger">0</span>
+                </a>
+            </li>
             </ul>
         </nav>
     </header>

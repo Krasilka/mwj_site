@@ -23,7 +23,7 @@ class ProductList {
                     <img src="img/products/${product.image}" alt="${product.title}">
                     <div class="card-body">
                         <h4>${product.title}</h4>
-                        <p class="card-text text-truncate">${product.price}</p>
+                        <p class="card-text text-truncate">${product.price} UAH</p>
                         <button type="button" class="add-to-cart btn btn-dark" data-toggle="modal" data-target="#addToCartModal" data-id="${product.id}" value="Add to cart">Add to Cart</button>
                     </div>
                 </div>
