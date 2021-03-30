@@ -39,7 +39,7 @@ const collectionsSliderJSON = `
 ]
 `;
 
-function renderCollections (collections) {
+function renderCollections(collections) {
     const sliderContainer = document.querySelector(".collections-slider-container");
 
     sliderContainer.innerHTML = '';
