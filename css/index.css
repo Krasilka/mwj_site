@@ -59,6 +59,7 @@
             display: flex;
             flex-direction: row;
             height: 100px;
+            transition: opacity 2s;
     }
     
     nav .logo img {
@@ -75,8 +76,8 @@
         top: 70px;
         right: -300px;
         text-align: right;
-        font-size: 0.8rem;
-        width: 20%;
+        font-size: 1rem;
+        width: 30%;
         padding: 10px 20px 10px 0;
         transition: right .8s cubic-bezier(1, 0, 0, 1);
     }
@@ -246,6 +247,15 @@
         margin-left: auto;
     }
 
+    .contact-us .social-accounts {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding-left: 0;
+    }
+    
     ul.social-accounts {
         padding-left: 0;
     }
