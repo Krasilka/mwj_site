@@ -1,3 +1,4 @@
+// Hamburger menu for mobile view
 const menuIcon = document.querySelector('.hamburger-icon');
 const mobileMenu = document.querySelector('.hamburger-menu');
 const mobileMenuItems = document.querySelector('ul');
@@ -19,8 +20,17 @@ outside.addEventListener('click', function () {
     hidden = true;
 });
 
+// Fade out effect for mobile nav bar
+const navbar = document.querySelector('nav');
+const navHeight = parseInt(window.getComputedStyle(navbar).height)
 
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > navHeight || document.documentElement.scrollTop > navHeight) {
+    navbar.classList.add('fade-out');
+  } else {
+    navbar.classList.remove('fade-out');
+  }};
 
-
-//TODO navigation menu disappear on scroll for mobile view
+  

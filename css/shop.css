@@ -57,6 +57,12 @@ form#subscribe input  {
         flex-direction: row;
         position: fixed;
         height: 100px;
+        opacity: 1;
+        transition: opacity 0.8s;
+    }
+
+    .fade-out {
+    opacity: 0;
     }
 
     nav .logo img {
