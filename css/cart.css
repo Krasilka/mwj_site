@@ -1,0 +1,18 @@
+.count {
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 60%;
+    background-color: rgb(102, 5, 5);
+    border-radius: 100%;
+}
+
+@media (min-width: 769px) { 
+    .count {
+        position: absolute;
+        margin-left: -30%;
+        margin-top: 50%;
+        background-color: rgb(102, 5, 5);
+        border-radius: 100%;
+    }
+    
+}

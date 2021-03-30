@@ -307,6 +307,10 @@
         margin: 0;
     }
 
+    .shopping-bag {
+        position: relative;
+    }
+
     .social-accounts img {
         height: 20px;
         margin: 2px;
